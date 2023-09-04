@@ -23,7 +23,8 @@ nav ul li {
 }
 .banner-text {
   position: absolute;
-  top: 60px;
+  top: 20px;
+
   color: black;
 }
 .arrow {
@@ -43,8 +44,10 @@ nav ul li {
 .arrow p {
   margin-top: 5px;
 }
-.jarimg {
-  display: block;
+.jarimg1,
+.jarimg2,
+.jarimg3 {
+  border: 2px solid#0c356a;
 }
 .jar-text {
   display: flex;
@@ -52,7 +55,8 @@ nav ul li {
   align-items: center;
   justify-content: center;
 }
-.jar-text h3 {
+
+h3 {
   color: #b81c1c;
   font-weight: 700px;
   margin-bottom: 0px;
@@ -61,6 +65,11 @@ nav ul li {
   text-align: center;
 }
 .horizontal {
+  margin: 30px 0 30px 0;
+  border: 2px solid #b81c1c;
+}
+
+.horizontal-last {
   margin: 30px 0 30px 0;
   border: 2px solid #b81c1c;
 }
@@ -79,7 +88,71 @@ nav ul li {
   text-align: center;
 }
 .footer ul li {
+  font-size: 10px;
   list-style: none;
   display: inline-block;
-  padding: 0px 10px;
+  padding: 0px 2px;
+  margin: 0px 1px 0 1px;
+}
+
+@media screen and (min-width: 667px) and (max-width: 1920px) {
+  nav ul li {
+    display: inline-block;
+    padding: 0px 10px;
+  }
+  .hamburger {
+    display: none;
+  }
+  .footer p {
+    text-align: center;
+    margin: 10px 300px 10px 300px;
+  }
+
+  .footer ul li {
+    padding: 0 10px;
+    font-size: 15px;
+    color: rgb(38, 6, 105);
+    font-weight: 900px;
+  }
+
+  .banner-text {
+    top: 160px;
+  }
+
+  .jars {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .jarimg1 {
+    margin-right: 20px;
+  }
+  .jarimg2 {
+    margin-right: 20px;
+  }
+  .jarimg3 {
+    margin-right: 20px;
+  }
+  body {
+    margin: 20px;
+  }
+  .horizontal {
+    display: none;
+  }
+  .floatimgright {
+    float: right;
+    width: 30%;
+    margin: 20px;
+  }
+  .floatimgleft {
+    float: left;
+    width: 20%;
+    margin: 20px 60px 60px 0px;
+  }
+  .content2 {
+    margin: 50px 0px 0px 0px;
+  }
+  .content2 ul li {
+    padding: 0px 80px 0px 0px;
+    margin: 0px 50px;
+  }
 }
